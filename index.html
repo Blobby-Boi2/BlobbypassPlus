@@ -116,7 +116,7 @@
     max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 10px 14px;
     background: linear-gradient(180deg, rgba(0,10,0,0.6), rgba(0,18,0,0.8));
     border: 1px solid rgba(0,255,85,0.06);
@@ -126,9 +126,7 @@
   }
 
   .bookmarks-text {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
     color: var(--neon);
     font-size: 18px;
     user-select: none;
@@ -137,6 +135,8 @@
   }
 
   .toggle-button {
+    position: absolute;
+    right: 14px;
     background: transparent;
     user-select: none;
     border: 1px solid var(--neon);
